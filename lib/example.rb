@@ -1,5 +1,14 @@
+require 'pry'
 class Garden
   attr_accessor :name
+  # def name=(name)
+  #   @name = name
+  # end 
+
+  # def name
+  #   @name
+  # end 
+
 
   def initialize(name:)
     @name = name
@@ -36,3 +45,5 @@ cucumber = Plant.new(name: 'Cucumber')
 cucumber.garden = lawn
 
 p lawn.plants
+
+binding.pry 
